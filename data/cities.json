@@ -1,0 +1,19 @@
+{
+  "cities": [
+    {
+      "id": "bucaramanga",
+      "name": "Bucaramanga",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "status": "ready",
+      "data": "data/bucaramanga.json"
+    },
+    {
+      "id": "more",
+      "name": "More cities",
+      "country": "",
+      "flag": "➕",
+      "status": "coming-soon"
+    }
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "id": "bucaramanga",
+  "name": "Bucaramanga",
+  "country": "Colombia",
+  "flag": "🇨🇴",
+  "region": "Santander · Área Metropolitana (incl. Floridablanca)",
+  "researched": "2026-10-10",
+  "researchedLabel": "Oct 10, 2026",
+  "fx": {
+    "copPerUsd": 3900,
+    "label": "3,900 COP = 1 USD (assumption)"
+  },
+  "tagline": "Shortlisting 2BR furnished rentals in Cabecera, Cañaveral and Fontana/Provenza — with a close look at earthquake safety after the August 2026 quakes.",
+  "criteria": [
+    "2 bedrooms",
+    "Furnished",
+    "House or max 2 stories",
+    "Towers only if built 2010 or later (NSR-10 era)",
+    "Areas: Cabecera, Cañaveral, near Calle 99 & Cra 19 (Fontana/Provenza)"
+  ],
+  "areas": [
+    {
+      "id": "cabecera",
+      "label": "Cabecera del Llano"
+    },
+    {
+      "id": "canaveral",
+      "label": "Cañaveral / Floridablanca"
+    },
+    {
+      "id": "fontana",
+      "label": "Fontana / Provenza (Calle 99 & Cra 19)"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "rentRanges": [
+    {
+      "area": "Cabecera del Llano",
+      "range": "COP 2.0–4.5M",
+      "extra": "+ 0.5–0.9M admin"
+    },
+    {
+      "area": "Cañaveral",
+      "range": "COP 1.9–3.6M unfurnished",
+      "extra": "3.1–5.5M furnished"
+    },
+    {
+      "area": "Fontana / Provenza",
+      "range": "COP 1.7–2.5M",
+      "extra": ""
+    }
+  ],
+  "costOfLiving": {
+    "couple": "USD 1,500–2,200 / month incl. rent (general estimate)",
+    "utilities": "USD 60–150 / month"
+  },
+  "listings": [
+    {
+      "id": 1,
+      "title": "Casa Puyana — single-level house in gated conjunto",
+      "area": "cabecera",
+      "type": "house",
+      "typeLabel": "House · single level",
+      "furnished": "unconfirmed",
+      "yearStatus": "na",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 85,
+      "price": 4550000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 0,
+        "label": "Included"
+      },
+      "estrato": 6,
+      "features": [
+        "Pool",
+        "Jacuzzi",
+        "Gym",
+        "24/7 security"
+      ],
+      "notes": "Furnished status not stated. The listing page could not be re-verified later — it may be gone.",
+      "flags": [
+        "Listing page could not be re-verified"
+      ],
+      "links": [
+        {
+          "label": "Fincaraíz",
+          "url": "https://www.fincaraiz.com.co/casa-en-arriendo-en-cabecera-del-llano-bucaramanga/193994800"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Casa 2 niveles — Conjunto Bello Horizonte III (Buganvilia)",
+      "area": "canaveral",
+      "type": "house",
+      "typeLabel": "House · 2 levels",
+      "furnished": "unconfirmed",
+      "yearStatus": "na",
+      "yearBuilt": null,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sizeM2": 137,
+      "price": 3800000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 606000,
+        "label": "COP 606,000"
+      },
+      "features": [
+        "24h guard",
+        "Pool"
+      ],
+      "notes": "Furnished not stated. 3BR (more than the 2BR target).",
+      "flags": [
+        "3BR, not 2BR"
+      ],
+      "links": [
+        {
+          "label": "Fincaraíz",
+          "url": "https://www.fincaraiz.com.co/casa-en-arriendo-en-canaveral-floridablanca/193767192"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Casa 2 pisos — Fontana, Calle 99",
+      "area": "fontana",
+      "type": "house",
+      "typeLabel": "House · 2 floors",
+      "furnished": "unconfirmed",
+      "yearStatus": "na",
+      "yearBuilt": "1988",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "sizeM2": 84,
+      "price": 2500000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "estrato": 4,
+      "features": [
+        "Near C.C. Único",
+        "Inmobiliaria Ruiz Perea"
+      ],
+      "notes": "Built 1988 (pre-NSR-10 — the tower rule doesn't apply to houses, but worth a structural look). Furnished unconfirmed. 3BR.",
+      "flags": [
+        "3BR, not 2BR",
+        "Built 1988"
+      ],
+      "links": [
+        {
+          "label": "Ruiz Perea",
+          "url": "https://www.iruizperea.com/property/casa-en-arriendo-en-bucaramanga-fontana/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fontana / Provenza apartment — Cra 19",
+      "area": "fontana",
+      "type": "unknown",
+      "typeLabel": "Apartment · building height unknown",
+      "furnished": "unconfirmed",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 57,
+      "price": 1685000,
+      "priceApprox": true,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "estrato": 4,
+      "features": [
+        "Gym",
+        "Jacuzzi",
+        "Security"
+      ],
+      "notes": "Price was partly cut off on the page (~COP 1,685,000) — confirm. Building height and year unknown.",
+      "flags": [
+        "Price partly cut off — confirm"
+      ],
+      "links": [
+        {
+          "label": "Rentola",
+          "url": "https://rentola.co.com/listings/apartamento-en-arriendo-en-comuna-11-sur-p9b4a4b"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Provenza apartment — Cra 19 (Cod 6316)",
+      "area": "fontana",
+      "type": "tower",
+      "typeLabel": "Apartment · elevator building",
+      "furnished": "unconfirmed",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": 60,
+      "price": null,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [
+        "Pools",
+        "Gym",
+        "Sauna",
+        "Elevator"
+      ],
+      "notes": "Price not shown on the listing. Has an elevator, so likely a multi-story building; year unverified.",
+      "flags": [
+        "Price not shown"
+      ],
+      "links": [
+        {
+          "label": "Rentola",
+          "url": "https://rentola.co.com/listings/apartamento-en-arriendo-provenza-occidente-pc591fb"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Cabecera apartment — near Quinta Etapa",
+      "area": "cabecera",
+      "type": "unknown",
+      "typeLabel": "Apartment · tower/height unknown",
+      "furnished": "unconfirmed",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 67,
+      "price": 2618000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 582000,
+        "label": "COP 582,000"
+      },
+      "estrato": 6,
+      "features": [
+        "Near Quinta Etapa"
+      ],
+      "notes": "Tower/height unknown, year unverified, furnished not stated.",
+      "flags": [],
+      "links": [
+        {
+          "label": "Fincaraíz",
+          "url": "https://www.fincaraiz.com.co/apartamento-en-arriendo-en-cabecera-del-llano-bucaramanga/193911799"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Edificio K39 — Cra 39A #44-23 (JK Salcedo)",
+      "area": "cabecera",
+      "type": "tower",
+      "typeLabel": "Tower · elevator",
+      "furnished": "yes",
+      "yearStatus": "estimated",
+      "yearBuilt": "~2018–2019",
+      "yearNote": "Estimated from a 2024 resale ad saying 'antigüedad 5 años'.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 70,
+      "price": 3500000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 525100,
+        "label": "COP 525,100"
+      },
+      "features": [
+        "Furnished",
+        "Elevator"
+      ],
+      "notes": "Strong fit on paper: furnished 2BR/2BA in a post-2010 tower (year estimated — ask for the construction license).",
+      "flags": [],
+      "links": [
+        {
+          "label": "Fincaraíz",
+          "url": "https://www.fincaraiz.com.co/apartamento-en-arriendo-en-cabecera-del-llano-bucaramanga/193892593"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Reserva Cañaveral — furnished 2BR, level 1",
+      "area": "canaveral",
+      "type": "tower",
+      "typeLabel": "Tower · 2 towers × 21 floors (unit on level 1)",
+      "furnished": "yes",
+      "yearStatus": "estimated",
+      "yearBuilt": "~2016",
+      "yearNote": "From a Fincaraíz sale-unit description; another unit's tag contradicts it — ask for the license.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": null,
+      "price": 3100000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "address": "Calle 157 #154-169",
+      "features": [
+        "Furnished",
+        "A/C",
+        "Internet"
+      ],
+      "notes": "Calle 157 #154-169. Year sources conflict — request the building license (licencia de construcción).",
+      "flags": [
+        "Year sources conflict"
+      ],
+      "links": [
+        {
+          "label": "Punto Propiedad",
+          "url": "https://www.puntopropiedad.com/inmueble/dfaa-af7c-192d452-c5d4fe95f6cb-7907"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Reserva Cañaveral — furnished 2BR, 16th floor",
+      "area": "canaveral",
+      "type": "tower",
+      "typeLabel": "Tower · 21 floors (unit on 16th)",
+      "furnished": "yes",
+      "yearStatus": "estimated",
+      "yearBuilt": "~2016",
+      "yearNote": "Same building as the level-1 unit; year estimated.",
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": null,
+      "price": 3500000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [
+        "Furnished",
+        "High floor"
+      ],
+      "notes": "Same building as the level-1 listing (~2016, estimated).",
+      "flags": [],
+      "links": [
+        {
+          "label": "Punto Propiedad",
+          "url": "https://www.puntopropiedad.com/inmueble/9037-85f2-19c0c8c-81c5273fec77-74a9"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Reserva Cañaveral — Alohate cod 088",
+      "area": "canaveral",
+      "type": "tower",
+      "typeLabel": "Tower · 21 floors",
+      "furnished": "yes",
+      "yearStatus": "estimated",
+      "yearBuilt": "~2016",
+      "yearNote": "Same building; year estimated.",
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": null,
+      "price": 3400000,
+      "priceApprox": true,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [
+        "Furnished"
+      ],
+      "notes": "Price (~COP 3.4M) came from search-result text only — confirm on the page.",
+      "flags": [
+        "Price from search snippet only"
+      ],
+      "links": [
+        {
+          "label": "Alohate",
+          "url": "https://alohate.com.co/Amoblado/apto-2-hab-reserva-canaveral-cod-088/"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Furnished 3BR — Jardines de Coaviconsa / Nueva Fontana",
+      "area": "fontana",
+      "type": "lowrise",
+      "typeLabel": "Ads say “2 pisos” (unit or building? unclear)",
+      "typeUncertain": true,
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sizeM2": 80,
+      "price": 2400000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 0,
+        "label": "Included"
+      },
+      "features": [
+        "Furnished",
+        "Wi-Fi",
+        "Utility allowances",
+        "Calle 102, across from Único"
+      ],
+      "notes": "COP 2,400,000/month incl. admin, Wi-Fi and utility allowances; also offered nightly at COP 150,000. Same host offers a furnished house with 6 single beds. Contacts: 318 890 6543, 310 757 3822.",
+      "flags": [
+        "3BR, not 2BR",
+        "“2 pisos” unclear"
+      ],
+      "links": [
+        {
+          "label": "Punto Propiedad (ad 1)",
+          "url": "https://www.puntopropiedad.com/inmueble/b1da-8906-d334a5d6-a3823c470e34-1f88"
+        },
+        {
+          "label": "Punto Propiedad (ad 2)",
+          "url": "https://www.puntopropiedad.com/inmueble/c030-a619-dd00e5c6-c1570350ecf7-109f"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Furnished two-level house in gated complex (Airbnb)",
+      "area": "canaveral",
+      "type": "house",
+      "typeLabel": "House · 2 levels",
+      "furnished": "yes",
+      "yearStatus": "na",
+      "yearBuilt": null,
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sizeM2": null,
+      "price": null,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "n/a (Airbnb)"
+      },
+      "features": [
+        "Pool",
+        "Sauna",
+        "Garden",
+        "Gated"
+      ],
+      "notes": "Utilities capped at COP 100k electricity / 100k water / 50k gas. Price not shown. Only 1 review.",
+      "flags": [
+        "Price not shown",
+        "Only 1 review",
+        "3BR, not 2BR"
+      ],
+      "links": [
+        {
+          "label": "Airbnb",
+          "url": "https://www.airbnb.co.za/rooms/699283660139834545"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Airbnb 2BR/2BA near San Pío Park",
+      "area": "cabecera",
+      "type": "unknown",
+      "typeLabel": "Apartment · height unknown",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": null,
+      "price": null,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "n/a (Airbnb)"
+      },
+      "features": [
+        "⭐ 4.95 · 97 reviews",
+        "31+ nights"
+      ],
+      "notes": "Monthly stays (31+ nights). Price not shown. Building height unknown. Furnished as an Airbnb.",
+      "flags": [
+        "Price not shown"
+      ],
+      "links": [
+        {
+          "label": "Airbnb",
+          "url": "https://www.airbnb.com/rooms/732051270064253273"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Furnished 78 m² apartment — Cra 39 (ASECASA)",
+      "area": "cabecera",
+      "type": "tower",
+      "typeLabel": "Apartment · elevator building",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": null,
+      "bathrooms": null,
+      "sizeM2": 78,
+      "price": 3000000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 288000,
+        "label": "COP 288,000"
+      },
+      "features": [
+        "Furnished",
+        "Elevator"
+      ],
+      "notes": "Via Trovit. Bedroom count not captured; year unverified.",
+      "flags": [
+        "Bedrooms not captured"
+      ],
+      "links": [
+        {
+          "label": "Trovit",
+          "url": "https://casas.trovit.com.co/arriendo-apartamento-cabecera-cra-39-bucaramanga"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Furnished 75 m² 2BR — Cabecera, Cra 39",
+      "area": "cabecera",
+      "type": "tower",
+      "typeLabel": "Tower · elevator",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": 75,
+      "price": 4600000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [
+        "Furnished",
+        "Elevator",
+        "Utilities with caps"
+      ],
+      "notes": "Utilities included up to caps. Year unverified.",
+      "flags": [],
+      "links": [
+        {
+          "label": "Punto Propiedad",
+          "url": "https://www.puntopropiedad.com/inmueble/ca95-97a2-2d9e1946-1b17738521de-1274"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Paralela 150 — furnished 2BR",
+      "area": "canaveral",
+      "type": "tower",
+      "typeLabel": "Tower · 2 elevators per tower",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": null,
+      "price": null,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [
+        "Furnished",
+        "Wi-Fi",
+        "A/C",
+        "Washer",
+        "2 elevators/tower"
+      ],
+      "notes": "Price not shown on the furnished ad. A different unit in the same complex is on Ciencuadras at COP 2,470,000 (furnished unconfirmed). Year unverified.",
+      "flags": [
+        "Price not shown"
+      ],
+      "links": [
+        {
+          "label": "Punto Propiedad",
+          "url": "https://www.puntopropiedad.com/inmueble/dbaa-9740-c38e45e6-3985e539aa8a-1273"
+        },
+        {
+          "label": "Ciencuadras unit (COP 2.47M)",
+          "url": "https://www.ciencuadras.com/inmueble/apartamento-en-arriendo-en-paralela-150-floridablanca-3848772"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Fontana 60 m² 2BR apartment",
+      "area": "fontana",
+      "type": "unknown",
+      "typeLabel": "Apartment · height unknown",
+      "furnished": "unconfirmed",
+      "yearStatus": "unverified",
+      "yearBuilt": "2026?",
+      "yearNote": "A listing summary says built 2026 — unconfirmed.",
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": 60,
+      "price": 2606000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [],
+      "notes": "Furnished not shown. 'Built 2026' appears only in a summary — unconfirmed.",
+      "flags": [],
+      "links": [
+        {
+          "label": "Fincaraíz",
+          "url": "https://www.fincaraiz.com.co/apartamento-en-arriendo-en-fontana-bucaramanga/194007176"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Gaira — Cañaveral (Ciencuadras)",
+      "area": "canaveral",
+      "type": "unknown",
+      "typeLabel": "Apartment · height unknown",
+      "furnished": "unconfirmed",
+      "yearStatus": "estimated",
+      "yearBuilt": "~2014 (weak)",
+      "yearNote": "Weak evidence for 2014.",
+      "bedrooms": 2,
+      "bedroomsUncertain": true,
+      "bathrooms": null,
+      "sizeM2": null,
+      "price": 1750000,
+      "priceApprox": false,
+      "admin": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "features": [],
+      "notes": "Furnished and 2BR both unverified. Year likely 2014 (weak evidence).",
+      "flags": [
+        "2BR unverified"
+      ],
+      "links": [
+        {
+          "label": "Ciencuadras",
+          "url": "https://www.ciencuadras.com/inmueble/apartamento-en-arriendo-en-ub-gaira-floridablanca-3828322"
+        }
+      ]
+    }
+  ],
+  "knownTowers": [
+    {
+      "name": "Torre Spinosa",
+      "area": "Floridablanca",
+      "year": "Planned delivery 2017",
+      "note": "No furnished listing found"
+    },
+    {
+      "name": "Bosques de Baviera",
+      "area": "—",
+      "year": "Planned July 2024",
+      "note": "No furnished listing found"
+    },
+    {
+      "name": "Torre Picasso",
+      "area": "Provenza",
+      "year": "2010",
+      "note": "Borderline for NSR-10 — check license date"
+    }
+  ],
+  "sections": [
+    {
+      "id": "safety",
+      "icon": "🛡️",
+      "title": "Earthquake & building safety",
+      "blocks": [
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "date": "Aug 10, 2026",
+              "badge": "M7.4",
+              "text": "Major earthquake (USGS event us6000tjl2). Asocapitales published a situation report on impacts across Colombian capital cities."
+            },
+            {
+              "date": "Aug 26, 2026",
+              "badge": "M5.1",
+              "text": "Quake with epicenter near Los Santos, Santander (SGC), felt in Bucaramanga."
+            },
+            {
+              "date": "Aug–Sep 2026",
+              "badge": "Follow-up",
+              "text": "Bucaramanga stepped up building prevention measures (Vanguardia); UIS is planning a seismic-risk diagnosis for the city (Caracol)."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "ok",
+          "html": "<strong>No damage reports found for Bucaramanga towers</strong> in the sources reviewed. That is an absence of reports, not a confirmation that every building was inspected."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Post-quake inspection colors",
+              "html": "The national government unified the methodology for assessing buildings after the quake (UNGRD, Circular 73). Buildings are tagged:<ul class=\"tags\"><li><span class=\"dot green\"></span><b>Green</b> — safe to occupy</li><li><span class=\"dot yellow\"></span><b>Yellow</b> — restricted use / needs further evaluation</li><li><span class=\"dot red\"></span><b>Red</b> — unsafe, do not occupy</li></ul>"
+            },
+            {
+              "title": "NSR-10",
+              "html": "Colombia's seismic-resistant building code (Reglamento Colombiano de Construcción Sismo Resistente, 2010). Bucaramanga is in a high seismic-hazard zone, which is why the shortlist rule is <em>towers built 2010 or later</em>. Buildings licensed right around 2010 (e.g. Torre Picasso) are borderline — the license date matters more than the delivery date."
+            },
+            {
+              "title": "Law 1796 of 2016 (“Vivienda Segura”)",
+              "html": "Added independent review of structural designs, technical supervision during construction and a technical occupancy certificate for new buildings — a further plus for post-2016-licensed towers."
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "title": "Renter checklist",
+          "items": [
+            "Ask the administración for the building's construction license (licencia de construcción) number and date — confirms NSR-10 era.",
+            "Ask whether the building was inspected after the Aug 2026 quakes and what color it got (green/yellow/red).",
+            "Walk the common areas: look for new diagonal cracks in walls, columns, stairwells, and at the parking levels.",
+            "Check that elevators were inspected/certified and that the building has a posted evacuation plan and meeting point.",
+            "Prefer lower floors or houses/low-rise if unsure; know the stair route from your unit.",
+            "Ask whether the copropiedad has earthquake coverage on its common-area insurance policy; consider contents/renter insurance.",
+            "Keep a small go-bag (water, documents, flashlight, meds) and register with the US Embassy STEP program."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "USGS — event us6000tjl2",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/origin/magnitude"
+        },
+        {
+          "label": "Asocapitales — informe terremoto capitales No. 27 (PDF)",
+          "url": "https://www.asocapitales.co/sites/default/files/2026-08/informe-terremoto-capitales-no-27.pdf"
+        },
+        {
+          "label": "SGC — sismo Los Santos, Santander (Aug 26, 2026)",
+          "url": "https://www2.sgc.gov.co/Noticias/Paginas/El-SGC-registra-sismo-con-epicentro-en-Los-Santos-Santander-este-26-de-agosto-de-2026.aspx"
+        },
+        {
+          "label": "UNGRD — unified building-assessment methodology",
+          "url": "http://portal.gestiondelriesgo.gov.co/Paginas/Noticias/2026/Gobierno-nacional-unifica-metodologia-para-evaluar-el-estado-de-edificaciones-afectadas-tras-el-sismo.aspx"
+        },
+        {
+          "label": "Vanguardia — prevention measures in buildings (Aug 17, 2026)",
+          "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/08/17/bucaramanga-asi-extreman-las-prevenciones-contra-sismos-en-edificaciones/"
+        },
+        {
+          "label": "Caracol — UIS seismic-risk diagnosis (Aug 30, 2026)",
+          "url": "https://caracol.com.co/2026/08/30/uis-proyecta-diagnostico-de-riesgo-sismico-para-bucaramanga-tras-los-recientes-terremotos/"
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "icon": "💸",
+      "title": "Cost of living & renting as a foreigner",
+      "blocks": [
+        {
+          "type": "stats"
+        },
+        {
+          "type": "ranges"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Co-signer (codeudor)",
+              "html": "Traditional unfurnished leases through an inmobiliaria usually require a Colombian <b>codeudor</b> (co-signer, often with property in Colombia) or a lease-insurance policy (póliza / afianzadora). Foreigners without local credit history often can't meet this — furnished rentals and Airbnb-style monthly stays usually skip it."
+            },
+            {
+              "title": "Deposit",
+              "html": "Expect to be asked for a deposit, especially on furnished units (commonly one month — confirm). Get the amount, conditions for return, and an inventory (inventario) of the furniture in writing."
+            },
+            {
+              "title": "Contract length",
+              "html": "Standard leases are <b>12 months</b>. Furnished / temporary rentals are more flexible (monthly), but cost more — compare the Cañaveral furnished vs. unfurnished ranges."
+            },
+            {
+              "title": "Visa / length of stay",
+              "html": "US citizens typically enter as visitors for <b>90 days</b>, extendable to <b>180 days</b> per calendar year. A longer stay needs a visa (e.g. digital-nomad, pensioner or rentista) — check Migración Colombia / Cancillería before committing to a 12-month lease."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unverified",
+      "icon": "⚠️",
+      "title": "What's not verified",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<b>No tower year is officially verified.</b> K39 (~2018–19), Reserva Cañaveral (~2016) and Gaira (~2014) are estimates from ads; sources for Reserva Cañaveral conflict. Ask for the construction license.",
+            "Furnished status is unconfirmed for listings 1–6, 17 and 18.",
+            "Prices are not shown for listings 5, 12, 13 and 16; listing 4's price was partly cut off; listing 10's price came from search text only.",
+            "Casa Puyana (listing 1) could not be re-verified — the ad may be gone.",
+            "Listing 11 is 3BR (not 2BR) and its “2 pisos” may describe the unit or the building.",
+            "Listing 17's 'built 2026' is from a summary only.",
+            "Building heights are unknown for listings 4, 6, 13, 17 and 18.",
+            "Rent ranges and cost-of-living figures are general estimates, not quotes.",
+            "USD values use a fixed 3,900 COP/USD assumption; the real rate moves.",
+            "No inspection color (green/yellow/red) has been confirmed for any specific building on this list."
+          ]
+        }
+      ]
+    }
+  ]
+}
