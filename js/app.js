@@ -22,10 +22,11 @@
     tower: { label: "Tower", cls: "info" },
     unknown: { label: "Height unknown", cls: "" }
   };
+const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
   const FURN = {
     yes: { label: "Furnished", cls: "ok" },
     no: { label: "Unfurnished", cls: "" },
-    unconfirmed: { label: "Furnished: unconfirmed", cls: "warn" }
+    notstated: { label: "Furnished: not stated", cls: "warn" }
   };
   const YEAR = {
     verified: { label: "2010+ verified", cls: "ok" },
@@ -122,7 +123,7 @@
           <p style="margin:0">${esc(d.tagline)}</p>
           <div class="meta-row">
             <span class="badge info">📅 Researched ${esc(d.researchedLabel)}</span>
-            <span class="badge">💱 FX ${esc(d.fx.label)}</span>
+            <span class="badge">💱 Exchange rate: ${esc(d.fx.label)} (<a href="${esc(d.fx.sourceUrl)}" target="_blank" rel="noopener">${esc(d.fx.source)}</a>, ${esc(d.fx.date)})</span>
             <span class="badge warn">Labels show what's unverified</span>
           </div>
           <div class="stat-grid">
@@ -166,7 +167,7 @@
           </div>
           <div class="field">
             <label for="f-furn">Furnished</label>
-            <select id="f-furn"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option><option value="unconfirmed">Unconfirmed</option></select>
+            <select id="f-furn"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option><option value="notstated">Not stated</option></select>
           </div>
           <div class="field">
             <label for="f-year">Year built status</label>
@@ -201,7 +202,7 @@
       </section>
 
       <section class="block" aria-labelledby="h-towers">
-        <div class="section-head"><h2 id="h-towers"><span class="emoji" aria-hidden="true">🏢</span>Known tower years — no furnished listing found</h2></div>
+        <div class="section-head"><h2 id="h-towers"><span class="emoji" aria-hidden="true">🏢</span>Known tower years — no furnished listing found</h2>${d.knownTowers_unsourced ? GEN : ""}</div>
         <div class="card table-wrap">
           <table>
             <thead><tr><th>Building</th><th>Area</th><th>Year</th><th>Note</th></tr></thead>
@@ -225,17 +226,17 @@
         case "callout":
           return `<div class="callout ${esc(b.tone)}">${b.html}</div>`;
         case "cards":
-          return `<div class="info-grid">${b.items.map((c) => `<div class="card"><h3>${esc(c.title)}</h3><div>${c.html}</div></div>`).join("")}</div>`;
+          return `<div class="info-grid">${b.items.map((c) => `<div class="card"><h3>${esc(c.title)}</h3>${c.unsourced ? GEN : ""}<div>${c.html}</div></div>`).join("")}</div>`;
         case "checklist":
-          return `<div class="card" style="margin-top:16px"><h3>${esc(b.title)}</h3><ul class="checklist">${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`;
+          return `<div class="card" style="margin-top:16px"><h3>${esc(b.title)}</h3>${b.unsourced ? GEN : ""}<ul class="checklist">${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`;
         case "list":
           return `<div class="card unverified-card"><ul class="plain-list">${b.items.map((i) => `<li>${i}</li>`).join("")}</ul></div>`;
         case "stats":
-          return `<div class="stat-grid" style="margin-top:0">
+          return `${b.unsourced ? `<p>${GEN} <span class="muted small">Cost-of-living figures below are general estimates.</span></p>` : ""}<div class="stat-grid" style="margin-top:0">
             <div class="stat card"><div class="label">Couple, monthly (incl. rent)</div><div class="value">${esc(d.costOfLiving.couple)}</div></div>
             <div class="stat card"><div class="label">Utilities</div><div class="value">${esc(d.costOfLiving.utilities)}</div></div></div>`;
         case "ranges":
-          return `<div class="card table-wrap" style="margin-top:16px"><h3 style="margin-bottom:6px">Typical 2BR rent ranges</h3><table>
+          return `<div class="card table-wrap" style="margin-top:16px"><h3 style="margin-bottom:6px">Typical 2BR rent ranges</h3>${b.unsourced ? GEN : ""}<table>
             <thead><tr><th>Area</th><th>Rent / month</th><th></th><th>≈ USD</th></tr></thead>
             <tbody>${d.rentRanges.map((r) => `<tr><td><b>${esc(r.area)}</b></td><td>${esc(r.range)}</td><td class="muted">${esc(r.extra)}</td><td>${usdRange(r.range, d.fx.copPerUsd)}</td></tr>`).join("")}</tbody></table></div>`;
         default: return "";

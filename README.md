@@ -13,4 +13,4 @@ to `data/cities.json`.
 
 Preview locally: `python3 -m http.server` then open http://localhost:8000 (fetch() doesn't work from `file://`).
 
-Data researched Oct 10, 2026; USD at an assumed 3,900 COP/USD. Unverified items are labeled on the page.
+Data researched Oct 10, 2026; USD at the official TRM of 3,181.74 COP/USD (Banco de la República/Superfinanciera, Oct 14, 2026). Unverified items are labeled on the page.

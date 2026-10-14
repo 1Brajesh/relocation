@@ -7,8 +7,11 @@
   "researched": "2026-10-10",
   "researchedLabel": "Oct 10, 2026",
   "fx": {
-    "copPerUsd": 3900,
-    "label": "3,900 COP = 1 USD (assumption)"
+    "copPerUsd": 3181.74,
+    "label": "3,181.74 COP per USD",
+    "source": "Banco de la República / Superfinanciera TRM (datos.gov.co)",
+    "sourceUrl": "https://www.datos.gov.co/resource/32sa-8pi3.json",
+    "date": "Oct 14, 2026"
   },
   "tagline": "Shortlisting 2BR furnished rentals in Cabecera, Cañaveral and Fontana/Provenza — with a close look at earthquake safety after the August 2026 quakes.",
   "criteria": [
@@ -64,7 +67,7 @@
       "area": "cabecera",
       "type": "house",
       "typeLabel": "House · single level",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "na",
       "yearBuilt": null,
       "bedrooms": 2,
@@ -100,7 +103,7 @@
       "area": "canaveral",
       "type": "house",
       "typeLabel": "House · 2 levels",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "na",
       "yearBuilt": null,
       "bedrooms": 3,
@@ -133,7 +136,7 @@
       "area": "fontana",
       "type": "house",
       "typeLabel": "House · 2 floors",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "na",
       "yearBuilt": "1988",
       "bedrooms": 3,
@@ -150,7 +153,7 @@
         "Near C.C. Único",
         "Inmobiliaria Ruiz Perea"
       ],
-      "notes": "Built 1988 (pre-NSR-10 — the tower rule doesn't apply to houses, but worth a structural look). Furnished unconfirmed. 3BR.",
+      "notes": "Built 1988 (pre-NSR-10 — the tower rule doesn't apply to houses, but worth a structural look). Furnished not stated. 3BR.",
       "flags": [
         "3BR, not 2BR",
         "Built 1988"
@@ -168,7 +171,7 @@
       "area": "fontana",
       "type": "unknown",
       "typeLabel": "Apartment · building height unknown",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "unverified",
       "yearBuilt": null,
       "bedrooms": 2,
@@ -203,7 +206,7 @@
       "area": "fontana",
       "type": "tower",
       "typeLabel": "Apartment · elevator building",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "unverified",
       "yearBuilt": null,
       "bedrooms": 2,
@@ -238,7 +241,7 @@
       "area": "cabecera",
       "type": "unknown",
       "typeLabel": "Apartment · tower/height unknown",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "unverified",
       "yearBuilt": null,
       "bedrooms": 2,
@@ -496,7 +499,7 @@
         "⭐ 4.95 · 97 reviews",
         "31+ nights"
       ],
-      "notes": "Monthly stays (31+ nights). Price not shown. Building height unknown. Furnished as an Airbnb.",
+      "notes": "Monthly stays (31+ nights). Price not shown. Building height unknown. Listing says “Furnished apartment” (checked Oct 14, 2026).",
       "flags": [
         "Price not shown"
       ],
@@ -597,7 +600,7 @@
         "Washer",
         "2 elevators/tower"
       ],
-      "notes": "Price not shown on the furnished ad. A different unit in the same complex is on Ciencuadras at COP 2,470,000 (furnished unconfirmed). Year unverified.",
+      "notes": "Price not shown on the furnished ad. A different unit in the same complex is on Ciencuadras at COP 2,470,000 (furnished not stated). Year unverified.",
       "flags": [
         "Price not shown"
       ],
@@ -618,7 +621,7 @@
       "area": "fontana",
       "type": "unknown",
       "typeLabel": "Apartment · height unknown",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "unverified",
       "yearBuilt": "2026?",
       "yearNote": "A listing summary says built 2026 — unconfirmed.",
@@ -632,7 +635,7 @@
         "label": "Not stated"
       },
       "features": [],
-      "notes": "Furnished not shown. 'Built 2026' appears only in a summary — unconfirmed.",
+      "notes": "Furnished not stated. 'Built 2026' appears only in a summary — unconfirmed.",
       "flags": [],
       "links": [
         {
@@ -647,7 +650,7 @@
       "area": "canaveral",
       "type": "unknown",
       "typeLabel": "Apartment · height unknown",
-      "furnished": "unconfirmed",
+      "furnished": "notstated",
       "yearStatus": "estimated",
       "yearBuilt": "~2014 (weak)",
       "yearNote": "Weak evidence for 2014.",
@@ -734,11 +737,13 @@
             },
             {
               "title": "NSR-10",
-              "html": "Colombia's seismic-resistant building code (Reglamento Colombiano de Construcción Sismo Resistente, 2010). Bucaramanga is in a high seismic-hazard zone, which is why the shortlist rule is <em>towers built 2010 or later</em>. Buildings licensed right around 2010 (e.g. Torre Picasso) are borderline — the license date matters more than the delivery date."
+              "html": "Colombia's seismic-resistant building code (Reglamento Colombiano de Construcción Sismo Resistente, 2010). Bucaramanga is in a high seismic-hazard zone, which is why the shortlist rule is <em>towers built 2010 or later</em>. Buildings licensed right around 2010 (e.g. Torre Picasso) are borderline — the license date matters more than the delivery date.",
+              "unsourced": true
             },
             {
               "title": "Law 1796 of 2016 (“Vivienda Segura”)",
-              "html": "Added independent review of structural designs, technical supervision during construction and a technical occupancy certificate for new buildings — a further plus for post-2016-licensed towers."
+              "html": "Added independent review of structural designs, technical supervision during construction and a technical occupancy certificate for new buildings — a further plus for post-2016-licensed towers.",
+              "unsourced": true
             }
           ]
         },
@@ -753,7 +758,8 @@
             "Prefer lower floors or houses/low-rise if unsure; know the stair route from your unit.",
             "Ask whether the copropiedad has earthquake coverage on its common-area insurance policy; consider contents/renter insurance.",
             "Keep a small go-bag (water, documents, flashlight, meds) and register with the US Embassy STEP program."
-          ]
+          ],
+          "unsourced": true
         }
       ],
       "sources": [
@@ -789,29 +795,35 @@
       "title": "Cost of living & renting as a foreigner",
       "blocks": [
         {
-          "type": "stats"
+          "type": "stats",
+          "unsourced": true
         },
         {
-          "type": "ranges"
+          "type": "ranges",
+          "unsourced": true
         },
         {
           "type": "cards",
           "items": [
             {
               "title": "Co-signer (codeudor)",
-              "html": "Traditional unfurnished leases through an inmobiliaria usually require a Colombian <b>codeudor</b> (co-signer, often with property in Colombia) or a lease-insurance policy (póliza / afianzadora). Foreigners without local credit history often can't meet this — furnished rentals and Airbnb-style monthly stays usually skip it."
+              "html": "Traditional unfurnished leases through an inmobiliaria usually require a Colombian <b>codeudor</b> (co-signer, often with property in Colombia) or a lease-insurance policy (póliza / afianzadora). Foreigners without local credit history often can't meet this — furnished rentals and Airbnb-style monthly stays usually skip it.",
+              "unsourced": true
             },
             {
               "title": "Deposit",
-              "html": "Expect to be asked for a deposit, especially on furnished units (commonly one month — confirm). Get the amount, conditions for return, and an inventory (inventario) of the furniture in writing."
+              "html": "Expect to be asked for a deposit, especially on furnished units (commonly one month — confirm). Get the amount, conditions for return, and an inventory (inventario) of the furniture in writing.",
+              "unsourced": true
             },
             {
               "title": "Contract length",
-              "html": "Standard leases are <b>12 months</b>. Furnished / temporary rentals are more flexible (monthly), but cost more — compare the Cañaveral furnished vs. unfurnished ranges."
+              "html": "Standard leases are <b>12 months</b>. Furnished / temporary rentals are more flexible (monthly), but cost more — compare the Cañaveral furnished vs. unfurnished ranges.",
+              "unsourced": true
             },
             {
               "title": "Visa / length of stay",
-              "html": "US citizens typically enter as visitors for <b>90 days</b>, extendable to <b>180 days</b> per calendar year. A longer stay needs a visa (e.g. digital-nomad, pensioner or rentista) — check Migración Colombia / Cancillería before committing to a 12-month lease."
+              "html": "US citizens typically enter as visitors for <b>90 days</b>, extendable to <b>180 days</b> per calendar year. A longer stay needs a visa (e.g. digital-nomad, pensioner or rentista) — check Migración Colombia / Cancillería before committing to a 12-month lease.",
+              "unsourced": true
             }
           ]
         }
@@ -826,18 +838,19 @@
           "type": "list",
           "items": [
             "<b>No tower year is officially verified.</b> K39 (~2018–19), Reserva Cañaveral (~2016) and Gaira (~2014) are estimates from ads; sources for Reserva Cañaveral conflict. Ask for the construction license.",
-            "Furnished status is unconfirmed for listings 1–6, 17 and 18.",
+            "Furnished is not stated for listings 1–6, 17 and 18 (marked “Not stated”).",
             "Prices are not shown for listings 5, 12, 13 and 16; listing 4's price was partly cut off; listing 10's price came from search text only.",
             "Casa Puyana (listing 1) could not be re-verified — the ad may be gone.",
             "Listing 11 is 3BR (not 2BR) and its “2 pisos” may describe the unit or the building.",
             "Listing 17's 'built 2026' is from a summary only.",
             "Building heights are unknown for listings 4, 6, 13, 17 and 18.",
             "Rent ranges and cost-of-living figures are general estimates, not quotes.",
-            "USD values use a fixed 3,900 COP/USD assumption; the real rate moves.",
+            "USD values use the official TRM of 3,181.74 COP per USD for Oct 14, 2026; the rate moves daily.",
             "No inspection color (green/yellow/red) has been confirmed for any specific building on this list."
           ]
         }
       ]
     }
-  ]
+  ],
+  "knownTowers_unsourced": true
 }
