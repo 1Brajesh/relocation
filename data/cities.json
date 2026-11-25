@@ -9,6 +9,14 @@
       "data": "data/bucaramanga.json"
     },
     {
+      "id": "curitiba",
+      "name": "Curitiba",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "status": "ready",
+      "data": "data/curitiba.json"
+    },
+    {
       "id": "more",
       "name": "More cities",
       "country": "",

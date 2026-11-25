@@ -1,0 +1,884 @@
+{
+  "id": "curitiba",
+  "name": "Curitiba",
+  "country": "Brazil",
+  "flag": "🇧🇷",
+  "region": "Paraná · southern Brazil",
+  "researched": "2026-11-25",
+  "researchedLabel": "Nov 25, 2026",
+  "fx": {
+    "perUsd": 5.8573,
+    "currency": "BRL",
+    "label": "5.8573 BRL per USD (PTAX venda)",
+    "source": "Banco Central do Brasil PTAX, cotação de venda (fechamento)",
+    "sourceUrl": "https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do",
+    "date": "Nov 24, 2026"
+  },
+  "priceFilter": {
+    "min": 1500,
+    "step": 100
+  },
+  "labels": {
+    "admin": "Condomínio",
+    "total": "Rent + condomínio",
+    "totalSort": "Rent + condomínio: low → high"
+  },
+  "tagline": "Shortlisting furnished 2-bedroom rentals in well-regarded Curitiba neighborhoods — houses or low-rises, or towers built in 2010 or later.",
+  "criteria": [
+    "2 bedrooms",
+    "Furnished (mobiliado) — only if the listing says so",
+    "House or max 2 stories",
+    "Towers / 3+ floors only if built 2010 or later",
+    "Areas: Batel, Água Verde, Bigorrilho/Champagnat, Cabral, Ahú, Juvevê, Mercês, Cristo Rei, Alto da Glória, Ecoville/Mossunguê, Centro Cívico, Bacacheri"
+  ],
+  "areas": [
+    {
+      "id": "batel",
+      "label": "Batel"
+    },
+    {
+      "id": "bigorrilho",
+      "label": "Bigorrilho / Champagnat"
+    },
+    {
+      "id": "aguaverde",
+      "label": "Água Verde"
+    },
+    {
+      "id": "ecoville",
+      "label": "Ecoville / Mossunguê"
+    },
+    {
+      "id": "altodagloria",
+      "label": "Alto da Glória"
+    },
+    {
+      "id": "cabral",
+      "label": "Cabral"
+    },
+    {
+      "id": "ahu",
+      "label": "Ahú"
+    },
+    {
+      "id": "juveve",
+      "label": "Juvevê"
+    },
+    {
+      "id": "merces",
+      "label": "Mercês"
+    },
+    {
+      "id": "cristorei",
+      "label": "Cristo Rei"
+    },
+    {
+      "id": "centrocivico",
+      "label": "Centro Cívico"
+    },
+    {
+      "id": "bacacheri",
+      "label": "Bacacheri"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "rentRanges": [
+    {
+      "area": "Água Verde — 2BR asking average",
+      "range": "R$ 4,240",
+      "extra": "QuintoAndar average of 52 listed 2BR apartments, Nov 25, 2026 (furnished and unfurnished mixed)",
+      "usd": "$724"
+    },
+    {
+      "area": "Bigorrilho — 2BR asking average",
+      "range": "R$ 3,800",
+      "extra": "QuintoAndar average of 40 listed 2BR apartments, Nov 25, 2026",
+      "usd": "$649"
+    },
+    {
+      "area": "Batel — 2BR asking averages, same day",
+      "range": "R$ 7,900–8,900",
+      "extra": "QuintoAndar showed R$ 8,900 on the citywide 2BR page (51 listings) and R$ 7,900 on the Bigorrilho nearby list (50 listings), Nov 25, 2026. Averages can be skewed by luxury units.",
+      "usd": "$1,349–1,519"
+    },
+    {
+      "area": "Centro Cívico — 2BR asking average",
+      "range": "R$ 2,100",
+      "extra": "QuintoAndar average of 18 listed 2BR apartments, Nov 25, 2026",
+      "usd": "$359"
+    },
+    {
+      "area": "Mossunguê / Ecoville area — 2BR asking average",
+      "range": "R$ 6,700",
+      "extra": "QuintoAndar average of 15 listed 2BR apartments, Nov 25, 2026",
+      "usd": "$1,144"
+    },
+    {
+      "area": "Mercês — 2BR asking average",
+      "range": "R$ 9,225",
+      "extra": "QuintoAndar average of 31 listed 2BR apartments, Nov 25, 2026 — unusually high; likely skewed by luxury listings",
+      "usd": "$1,575"
+    },
+    {
+      "area": "Citywide new residential leases (all types)",
+      "range": "R$ 2,476",
+      "extra": "Secovi-PR average contract value for September 2026 (Gazeta do Paraná, Nov 14, 2026). All neighborhoods and sizes, not just furnished 2BR in central areas.",
+      "usd": "$423"
+    },
+    {
+      "area": "Batel & Bigorrilho — blog range (April 2026)",
+      "range": "R$ 2,500–4,500",
+      "extra": "Luvi blog, April 24, 2026 — not a marketplace average",
+      "usd": "$427–768"
+    },
+    {
+      "area": "Água Verde — blog range (April 2026)",
+      "range": "R$ 2,000–3,800",
+      "extra": "Luvi blog, April 24, 2026",
+      "usd": "$341–649"
+    },
+    {
+      "area": "Juvevê & Bacacheri — blog range (April 2026)",
+      "range": "R$ 1,600–3,000",
+      "extra": "Luvi blog, April 24, 2026",
+      "usd": "$273–512"
+    }
+  ],
+  "costOfLiving": {
+    "couple": "No official couple-budget figure was found. Use the sourced rent averages below; other living costs are not estimated here.",
+    "utilities": "No cited citywide figure was found."
+  },
+  "listings": [
+    {
+      "id": 1,
+      "title": "Sky Condomínio Club — furnished 2BR, 24th floor (Shortstay)",
+      "area": "bigorrilho",
+      "type": "tower",
+      "typeLabel": "Tower · unit on the 24th floor (building has at least 24 floors)",
+      "furnished": "yes",
+      "yearStatus": "verified",
+      "yearBuilt": "2013",
+      "yearNote": "SYM Imóveis project page for Sky Condomínio Club at Rua Alferes Ângelo Sampaio, 2765 lists “Ano de construção: 2013” and “construção concluída em 2013.” That is an agency project page, not a municipal construction license.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeM2": 60,
+      "price": 5370,
+      "priceApprox": false,
+      "admin": {
+        "amount": 0,
+        "label": "Included in the monthly package"
+      },
+      "iptu": {
+        "amount": 0,
+        "label": "Included in the monthly package"
+      },
+      "address": "Rua Alferes Ângelo Sampaio, 2765",
+      "features": [
+        "Furnished",
+        "Balcony with barbecue",
+        "1 covered parking space",
+        "Internet included",
+        "Min. stay 60 days",
+        "No deposit (per the ad)"
+      ],
+      "notes": "Live on Nov 25, 2026. Monthly package R$ 5,370 for a 1-month stay (R$ 5,340 for 6+ months, R$ 5,310 for 12+ in one place on the page and R$ 5,270 in another — confirm). The package includes rent, internet, condomínio, IPTU and 1 covered parking space; electricity, gas and excess water are extra. The page describes the unit as Bigorrilho and also has a building blurb that says Água Verde; SYM lists this address as Bigorrilho. No pets; max 3 guests.",
+      "flags": [
+        "Min. stay 60 days",
+        "Year from agency project page, not a municipal license"
+      ],
+      "links": [
+        {
+          "label": "Shortstay",
+          "url": "https://shortstay.com.br/en/furnished-apartments/CB-0599/sky"
+        },
+        {
+          "label": "SYM — Sky year",
+          "url": "https://symimoveis.com.br/empreendimento/sky-condominio-club/pr-curitiba-bigorrilho/ref-10646/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Edifício Hayat — furnished 2BR, 6th floor",
+      "area": "bigorrilho",
+      "type": "tower",
+      "typeLabel": "Tower · unit on the 6th floor (elevator; floor count not stated)",
+      "furnished": "yes",
+      "yearStatus": "verified",
+      "yearBuilt": "2011",
+      "yearNote": "SYM Imóveis project page for Edifício Hayat at Rua Martim Afonso, 1871 lists “Ano de construção: 2011” and “construção concluída em 2011.” The rental ad names the building as Hayat but does not print a street number. Agency page, not a municipal license.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 74,
+      "price": 4100,
+      "priceApprox": false,
+      "admin": {
+        "amount": 796,
+        "label": "R$ 796 (quota + minimum water)"
+      },
+      "iptu": {
+        "amount": 230,
+        "label": "R$ 230/mês"
+      },
+      "features": [
+        "Furnished",
+        "Air conditioning in the suite",
+        "Balcony with barbecue",
+        "Gym",
+        "Party and games rooms",
+        "Small pet accepted"
+      ],
+      "notes": "Live on Nov 25, 2026 (MGF Imóveis / N & N Assessoria). Advertised rent R$ 4,100 is the punctuality-discount amount from the 2nd month; the first month is billed at the gross rent of R$ 5,100. The header says 2 parking spaces; the body says 1 double covered space — confirm. Fire insurance (2% of net rent per month) and move-in/out inspections (entry inspection R$ 700) are extra. Condo fee includes the ordinary quota and a minimum water charge.",
+      "flags": [
+        "First month billed at R$ 5,100",
+        "Year from agency project page, not a municipal license"
+      ],
+      "links": [
+        {
+          "label": "MGF Imóveis",
+          "url": "https://pr.mgfimoveis.com.br/apartamento-mobiliado-2-quartos-2-vagas-garagem-no-bigorrilho-aluguel-pr-309964994"
+        },
+        {
+          "label": "SYM — Hayat year",
+          "url": "https://symimoveis.com.br/empreendimento/edificio-hayat/pr-curitiba-bigorrilho/ref-18283/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Up Garden Residencial — furnished 2BR, Ecoville",
+      "area": "ecoville",
+      "type": "tower",
+      "typeLabel": "Tower · two-tower complex with elevator (unit floor not stated)",
+      "furnished": "yes",
+      "yearStatus": "verified",
+      "yearBuilt": "2025",
+      "yearNote": "A Chaves na Mão sale ad for the same address (Rua Azioly Maria Luiza Cuthma, 126) says the project was delivered in November 2025 (110 units in two towers). A Gazeta do Povo advertorial (April 19, 2023) had listed a planned delivery of August 2025. Construtora: Elio Winter Incorporações. Not a municipal license.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeM2": 48,
+      "price": 4500,
+      "priceApprox": false,
+      "admin": {
+        "amount": 631,
+        "label": "R$ 631"
+      },
+      "iptu": {
+        "amount": 220,
+        "label": "R$ 220/mês"
+      },
+      "address": "Rua Azioly Maria Luiza Cuthma, 126",
+      "features": [
+        "Ad says fully furnished and equipped",
+        "Air conditioning",
+        "Balcony with barbecue",
+        "Gym",
+        "Elevator",
+        "1 parking space"
+      ],
+      "notes": "Live on Nov 25, 2026 (A. Gonçalves Imóveis, code 12694). The description says “Totalmente mobiliado e equipado” and “Apartamento novo, recém construído,” but the characteristics list also includes “Semi Mobiliado.” Confirm what furniture is actually included. 48 m² private / 82 m² total.",
+      "flags": [
+        "Characteristics list also says “Semi Mobiliado”",
+        "Year from sale ad + planned-delivery advertorial, not a municipal license"
+      ],
+      "links": [
+        {
+          "label": "A. Gonçalves Imóveis",
+          "url": "https://agoncalves.com.br/imovel/12694/aluguel/apartamento-2-quartos-up-garden-ecoville-curitiba/"
+        },
+        {
+          "label": "Sale ad — delivery date",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-a-venda-2-quartos-pr-curitiba-ecoville-83m2-RS410000/id-27689330/"
+        },
+        {
+          "label": "Elio Winter project page",
+          "url": "https://eliowinter.com.br/up-garden-residencial/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Hotel Ampiezza — furnished 2BR coverage / duplex",
+      "area": "bigorrilho",
+      "type": "tower",
+      "typeLabel": "Tower · unit on the 8th–11th floor (coverage / duplex)",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "yearNote": "No construction year found on the listing or in a follow-up search for Hotel Ampiezza / Ampiezza Flat Hotel.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 96,
+      "price": 3260,
+      "priceApprox": false,
+      "admin": {
+        "amount": 0,
+        "label": "Included in the rent (per the ad)"
+      },
+      "iptu": {
+        "amount": 168,
+        "label": "R$ 168"
+      },
+      "address": "Rua Alferes Ângelo Sampaio, Bigorrilho",
+      "features": [
+        "Furnished",
+        "Coverage / duplex",
+        "Balcony",
+        "Pets allowed",
+        "No parking space",
+        "24h doorman",
+        "Elevator"
+      ],
+      "notes": "Live on Nov 25, 2026 (QuintoAndar 895609918, published about 4 months earlier). Rent R$ 3,260; condomínio included; IPTU R$ 168, fire insurance R$ 47 and service fee R$ 84 bring the listed total to R$ 3,559. Owner text calls it a charming coverage / duplex and says the rent already includes condomínio. Year built was not stated.",
+      "flags": [
+        "Year unverified"
+      ],
+      "links": [
+        {
+          "label": "QuintoAndar",
+          "url": "https://www.quintoandar.com.br/imovel/895609918/alugar/apartamento-2-quartos-bigorrilho-curitiba"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Edifício Flat Virmond — furnished 2BR",
+      "area": "bigorrilho",
+      "type": "tower",
+      "typeLabel": "Likely a tower (pool, gym, sauna, 24h doorman) · floor count not stated",
+      "typeUncertain": true,
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "yearNote": "No construction year found for Edifício Flat Virmond.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 61,
+      "price": 4000,
+      "priceApprox": false,
+      "admin": {
+        "amount": 856,
+        "label": "R$ 856 (approx.)"
+      },
+      "iptu": {
+        "amount": 144.82,
+        "label": "R$ 144.82/mês (approx.)"
+      },
+      "address": "Rua Capitão Souza Franco",
+      "features": [
+        "Furnished (planned furniture in living room, kitchen and both bedrooms)",
+        "1 suite",
+        "Balcony",
+        "1 parking space",
+        "Pool",
+        "24h doorman",
+        "Gym"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 45040810, Casa ao Lado Imobiliária). 61 m² useful / 80 m² total. The listing headers place it in Bigorrilho; the location text also says “R. Cap. Souza Franco – Batel,” on the Batel/Bigorrilho border. A 5% monthly “fundo de conservação” (returned at the end) and a 20% inspection fee on the first and last receipts are listed. Guarantees offered include seguro-fiança, fiador and others. Year and exact floor count were not stated.",
+      "flags": [
+        "Year unverified",
+        "Floor count not stated"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-bigorrilho-80m2-RS4700/id-45040810/"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Rua Guilherme Pugsley, 2620 — furnished 2BR, “novo”",
+      "area": "aguaverde",
+      "type": "tower",
+      "typeLabel": "Has elevators, so not a low-rise of 2 floors or fewer · floor count not stated",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "yearNote": "The ad calls the apartment “novo” and describes a modern building with remote 24h doorman, gym and coworking, but it does not give an ano de construção. The building at this exact number was not independently identified.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeM2": 42,
+      "price": 2600,
+      "priceApprox": false,
+      "admin": {
+        "amount": 737.17,
+        "label": "R$ 737.17 (approx.)"
+      },
+      "iptu": {
+        "amount": 135.25,
+        "label": "R$ 135.25/mês"
+      },
+      "address": "Rua Guilherme Pugsley, 2620",
+      "features": [
+        "Furnished",
+        "South-facing",
+        "Balcony with barbecue",
+        "Planned kitchen",
+        "Covered parking",
+        "Elevators",
+        "Remote 24h doorman"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 40892795, Tantus Imobiliária, ref. AP1978 / 04340.001). Advertised net rent R$ 2,600 from the 2nd month with on-time payment; first month is billed at the gross rent of R$ 3,250. 42 m² useful / 54 m² total. Also lists FCI R$ 130/mês and fire insurance R$ 29.57/mês. “Novo” is not a verified construction year.",
+      "flags": [
+        "Year unverified",
+        "First month billed at R$ 3,250"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-agua-verde-54m2-RS2580/id-40892795/"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Av. República Argentina, 2524 — furnished 2BR with 2 parking spaces",
+      "area": "aguaverde",
+      "type": "tower",
+      "typeLabel": "Likely a tower (pool, gym, 24h doorman) · floor count not stated",
+      "typeUncertain": true,
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "yearNote": "No building name or construction year on the ad.",
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sizeM2": 65,
+      "price": 3590,
+      "priceApprox": false,
+      "admin": {
+        "amount": 650,
+        "label": "R$ 650"
+      },
+      "iptu": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "address": "Avenida República Argentina, 2524",
+      "features": [
+        "Furnished",
+        "Kitchen equipped (fridge, cooktop, oven, microwave)",
+        "Washer in service area",
+        "1 suite",
+        "2 parking spaces",
+        "Pool",
+        "Gym",
+        "24h doorman"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 40702542, Pannoramo Negócios Imobiliários). 65 m² useful / 85 m² total. IPTU was not stated. About 600 m from Shopping Água Verde, per the ad. Year and floor count were not stated.",
+      "flags": [
+        "Year unverified",
+        "Floor count not stated"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-agua-verde-85m2-RS3590/id-40702542/"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Residence Versailles — furnished 2BR (pre-2010 tower)",
+      "area": "aguaverde",
+      "type": "tower",
+      "typeLabel": "Tower · elevator and 24h doorman (floor count not stated)",
+      "furnished": "yes",
+      "yearStatus": "estimated",
+      "yearBuilt": "~1995 (condominium CNPJ opened Nov 22, 1995)",
+      "yearNote": "The condominium’s CNPJ 00.923.399/0001-82, at Travessa Percy Withers, 88, was opened on Nov 22, 1995 (Receita Federal data republished by Índice CNPJ, page updated July 3, 2026). That is the condominium registration date, not a construction license, but it points to a mid-1990s building — before 2010.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 71,
+      "price": 3500,
+      "priceApprox": false,
+      "admin": {
+        "amount": 1020,
+        "label": "R$ 1,020"
+      },
+      "iptu": {
+        "amount": 184.13,
+        "label": "R$ 184.13/mês"
+      },
+      "address": "Travessa Percy Withers, 88",
+      "features": [
+        "Furnished",
+        "1 suite",
+        "Planned and equipped kitchen",
+        "1 parking space",
+        "Elevator",
+        "24h doorman",
+        "Playground and party hall"
+      ],
+      "notes": "Live on Nov 25, 2026 (Casa Prates, code 12599). 70–71 m² private (the page shows both 70 m² and 70,6 / 71 m²). Estimated total with fire insurance R$ 24.05 is R$ 4,728.18. The agency says no fiador is required and offers seguro-fiança from 10% of the rent, subject to insurer approval. Because the year appears to be well before 2010, this tower does not meet the 2010+ rule.",
+      "flags": [
+        "Pre-2010 (year estimated from CNPJ opening)",
+        "Does not meet the 2010+ tower rule"
+      ],
+      "links": [
+        {
+          "label": "Casa Prates",
+          "url": "https://casaprates.com.br/imoveis/apartamento-para-alugar-em-curitiba-no-bairro-agua-verde-12599/"
+        },
+        {
+          "label": "CNPJ record (Índice CNPJ)",
+          "url": "https://indicecnpj.com.br/empresa/condominio-edificio-residence-versailles-00923399000182"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Curitiba Loft Batel — furnished 2BR duplex, 9th floor",
+      "area": "batel",
+      "type": "tower",
+      "typeLabel": "Tower · unit on the 9th floor (duplex / double-height living room)",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "yearNote": "No construction year found for Edifício Curitiba Loft Batel / Rua Pasteur.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 112,
+      "price": 9900,
+      "priceApprox": false,
+      "admin": {
+        "amount": 1455,
+        "label": "R$ 1,455"
+      },
+      "iptu": {
+        "amount": 422.44,
+        "label": "R$ 422.44/mês"
+      },
+      "address": "Rua Pasteur, Batel",
+      "features": [
+        "100% furnished and decorated (per the ad)",
+        "North-facing, 9th floor",
+        "1 suite with closet and whirlpool tub",
+        "2 covered parking spaces",
+        "Gym",
+        "24h doorman",
+        "Pets accepted"
+      ],
+      "notes": "Live on Nov 25, 2026 (Connection Imóveis, ref. AD0005-COPX). Rent R$ 9,900 plus condomínio R$ 1,455 and IPTU R$ 422.44 (listed package R$ 11,777.44/mês). The first month also has an inspection fee and a proportional gross-rent charge, per the ad. Year built was not stated.",
+      "flags": [
+        "Year unverified"
+      ],
+      "links": [
+        {
+          "label": "Connection Imóveis",
+          "url": "https://www.imoveisconnection.com.br/imovel/apartamento-duplex-curitiba-2-quartos-112-m/AD0005-COPX"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Rua Mato Grosso, 589 — furnished 2BR",
+      "area": "aguaverde",
+      "type": "unknown",
+      "typeLabel": "Height not stated (electronic gate, party hall, small garden; no elevator mentioned)",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeM2": 46,
+      "price": 2600,
+      "priceApprox": false,
+      "admin": {
+        "amount": 380,
+        "label": "R$ 380"
+      },
+      "iptu": {
+        "amount": 94,
+        "label": "R$ 94/mês"
+      },
+      "address": "Rua Mato Grosso, 589",
+      "features": [
+        "Furnished",
+        "Equipped kitchen",
+        "1 shared parking space",
+        "Electronic gate",
+        "Party hall"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 42118919, Ponto Mil Imóveis). The title on one part of the page had shown R$ 3,100; the price displayed when opened was R$ 2,600 plus condomínio R$ 380 and IPTU R$ 94 — confirm with the agent. 46 m² useful / 82 m² total. Building height and year were not stated, so it is not treated as a confirmed low-rise.",
+      "flags": [
+        "Year unverified",
+        "Height unknown",
+        "Confirm the advertised rent"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-agua-verde-82m2-RS3100/id-42118919/"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Rua Acyr Guimarães — furnished 2BR near Praça do Japão",
+      "area": "aguaverde",
+      "type": "unknown",
+      "typeLabel": "Height not stated",
+      "furnished": "yes",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 130,
+      "price": 3980,
+      "priceApprox": false,
+      "admin": {
+        "amount": 770,
+        "label": "R$ 770"
+      },
+      "iptu": {
+        "amount": 100,
+        "label": "R$ 100"
+      },
+      "address": "Rua Acyr Guimarães, Água Verde (ad also says Batel, next to Praça do Japão)",
+      "features": [
+        "Furnished — “somente será locado no mobiliado como está”",
+        "1 suite",
+        "1 parking space"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 38728176, listed via QuintoAndar). 130 m² total; useful area not clearly stated. The description text is messy and also says “no Batel ao lado Praça Japao.” The ad said it would be available from July 30 (year not specified) — confirm it is still free. Year and height were not stated.",
+      "flags": [
+        "Year unverified",
+        "Height unknown",
+        "Confirm availability"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-agua-verde-130m2-RS3980/id-38728176/"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Rua Augusto Severo, 901 — 2BR (furnished not stated)",
+      "area": "altodagloria",
+      "type": "tower",
+      "typeLabel": "Has elevator(s) and doorman, so not a low-rise of 2 floors or fewer · floor count not stated",
+      "furnished": "notstated",
+      "yearStatus": "unverified",
+      "yearBuilt": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeM2": 77,
+      "price": 2850,
+      "priceApprox": false,
+      "admin": {
+        "amount": 730,
+        "label": "R$ 730"
+      },
+      "iptu": {
+        "amount": null,
+        "label": "Not stated"
+      },
+      "address": "Rua Augusto Severo, 901",
+      "features": [
+        "1 suite",
+        "Balcony",
+        "Kitchen cabinets",
+        "1 parking space",
+        "Elevator",
+        "Doorman"
+      ],
+      "notes": "Live on Nov 25, 2026 (Chaves na Mão 44570190, Imobiliária Juvevê). 77 m² useful / 141 m² total. The ad describes the area as Cabral / Alto da Glória / Centro Cívico, near the state court and the Oscar Niemeyer Museum. It does not say mobiliado/furnished (only “cozinha com armários”), so furnished is marked “not stated.” Year and exact floor count were not stated.",
+      "flags": [
+        "Furnished not stated",
+        "Year unverified"
+      ],
+      "links": [
+        {
+          "label": "Chaves na Mão",
+          "url": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-alto-da-gloria-141m2-RS3000/id-44570190/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "safety",
+      "icon": "🛡️",
+      "title": "Hazards & neighborhood safety",
+      "blocks": [
+        {
+          "type": "callout",
+          "tone": "ok",
+          "html": "<strong>Earthquake hazard is classified as very low</strong> for Curitiba on ThinkHazard (GFDRR / World Bank tool, using GEM data): less than a 2% chance of potentially damaging shaking in 50 years. That is a regional model, not a building-by-building assessment."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Earthquakes",
+              "html": "Unlike Bucaramanga, Curitiba is not in a high-seismic setting on the source reviewed. The 2010+ tower rule is still applied here as your standing criteria, not because of a local seismic code equivalent to Colombia’s NSR-10. No municipal post-quake inspection protocol was researched, because no recent damaging quake in Curitiba was found in this pass."
+            },
+            {
+              "title": "Flooding / alagamentos",
+              "html": "This is the clearer natural hazard. The City of Curitiba (May 13, 2026) called the <b>Córrego do Bigorrilho</b> basin historically vulnerable to flooding because of soil sealing. The stream rises near Padre Agostinho / Padre Anchieta in <b>Mercês</b>, runs toward the Center (including Rua Professor Fernando Moreira / Rua dos Chorões), and joins the Rio Ivo near Praça Osório. The city finished a channel cleaning there in May 2026 and published a bid for drainage studies (proposal opening July 7, 2026). A 2020 municipal climate-risk study also flagged future alagamento risk in several central neighborhoods, including <b>Batel, Mercês, Cabral, Ahú, Centro Cívico, Alto da Glória and Juvevê</b> (maps are for 2030–2100 scenarios, not a street-level guarantee). A PUCPR/IPPUC project, reported by Plural (updated Jan 3, 2026) and Tribuna, found media reports of flooding concentrated in Centro, Rebouças, <b>Água Verde</b>, Portão, Lindóia and Capão Raso."
+            },
+            {
+              "title": "Cold winters",
+              "html": "Curitiba is one of Brazil’s colder state capitals. INMET’s June 2025 climate bulletin for station A807 recorded a monthly mean of 15.3°C (1.9°C below the 1991–2020 normal of 17.2°C), a mean minimum of 10.9°C (normal 13.6°C), and a lowest temperature of <b>−0.3°C on June 25, 2025</b>. Ask about heating, sun exposure, window seals and winter damp/mold before signing — that checklist itself is general info."
+            },
+            {
+              "title": "Crime — what is sourced",
+              "html": "Tribuna do Paraná (June 11, 2026), citing Sesp-PR figures for the first quarter of 2026, listed the 10 neighborhoods with the most police reports: Centro (4,191), CIC (2,656), Sítio Cercado (1,752), Cajuru (1,584), Boqueirão (1,547), <b>Água Verde (1,453)</b>, Tatuquara (1,176), Uberaba (1,163), Portão (1,097) and Pinheirinho (982). The article says Centro, Água Verde and Portão are driven mainly by thefts and fraud (estelionato), while more violent deaths were concentrated in CIC, Sítio Cercado and Cajuru. <b>Batel, Bigorrilho, Cabral, Ahú, Juvevê, Mercês, Cristo Rei, Alto da Glória, Ecoville/Mossunguê, Centro Cívico and Bacacheri were not in that top 10.</b> That is not a finding that those areas are “safe” — only that they were not among the ten highest-volume neighborhoods in that ranking. High-circulation commercial streets can still have theft. No official per-neighborhood rates (adjusted for population or visitors) were found in this pass."
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "title": "Renter checklist",
+          "unsourced": true,
+          "items": [
+            "Ask for the building’s ano de construção or the habite-se / construction documents, especially for any tower.",
+            "Ask whether the unit or the street has flooded, and check the building’s relation to the Córrego do Bigorrilho or other channels if you are in Mercês, Bigorrilho, Batel or nearby.",
+            "In winter, look at sun exposure, window seals, heating (split or other), and signs of damp or mold.",
+            "Walk the block at night as well as by day; prefer buildings with a doorman if that matters to you.",
+            "Get condomínio, IPTU, water, gas, electricity and any fundo de conservação / inspection fees in writing.",
+            "Get a written inventory (vistoria) of the furniture before you move in."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "ThinkHazard — Curitiba earthquake (very low)",
+          "url": "https://www.thinkhazard.org/en/report/9183-brazil-parana-curitiba/EQ"
+        },
+        {
+          "label": "Prefeitura de Curitiba — Córrego do Bigorrilho drainage (May 13, 2026)",
+          "url": "https://www.curitiba.pr.gov.br/noticias/prefeitura-de-curitiba-intensifica-acao-no-corrego-bigorrilho-e-lanca-edital-para-estudos-de-drenagem-na-regiao/82993"
+        },
+        {
+          "label": "Prefeitura / IPPUC — Riscos climáticos da (2020 PDF)",
+          "url": "https://mid.curitiba.pr.gov.br/2020/00305799.pdf"
+        },
+        {
+          "label": "Plural — PUCPR flood-point study (updated Jan 3, 2026)",
+          "url": "https://www.plural.jor.br/quais-sa/"
+        },
+        {
+          "label": "INMET — Balanço de junho de 2025 para Curitiba (PDF)",
+          "url": "https://portal.inmet.gov.br/uploads/notastecnicas/2025-06-BALAN%C3%87O-CURITIBA_JUNHO_2025.pdf"
+        },
+        {
+          "label": "Tribuna do Paraná — Q1 2026 crime ranking, citing Sesp-PR (June 11, 2026)",
+          "url": "https://www.tribunapr.com.br/noticias/curitiba-regiao/centro-lidera-ranking-crimes-curitiba-dez-bairros-mais-ocorrencias-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "icon": "💸",
+      "title": "Cost of living & renting as a foreigner",
+      "blocks": [
+        {
+          "type": "stats",
+          "unsourced": false
+        },
+        {
+          "type": "ranges",
+          "unsourced": false
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Rental guarantees (Lei do Inquilinato)",
+              "html": "Lei nº 8.245/1991, art. 37, lets a landlord require <b>one</b> of four guarantees: <b>caução</b> (deposit), <b>fiança</b> (a fiador / co-signer), <b>seguro de fiança locatícia</b> (seguro-fiança), or assignment of investment-fund shares. Stacking more than one in the same contract is void. A cash caução may not exceed three months’ rent and must be placed in a savings account, with the yield going to the tenant (art. 38, § 2º). In practice many agencies still prefer a Brazilian fiador or an insurer’s approval for seguro-fiança — that practice is not spelled out in the statute."
+            },
+            {
+              "title": "CPF",
+              "html": "The Tenancy Law does not itself require a CPF to sign a lease, but banks, insurers and most agencies do. Receita Federal / gov.br (page last modified Dec 15, 2025) says foreigners living abroad must apply for a CPF in person at a Brazilian consular post, booked through e-Consular. The service is free. Get this before you start formal lease applications if you can."
+            },
+            {
+              "title": "Visitor visa (VIVIS / e-Visa) — US citizens",
+              "html": "Since April 10, 2025, US citizens need a visitor visa to enter Brazil for tourism or business. The e-Visa (VIVIS) is applied for online through VFS Global. The Brazilian Embassy in Canberra page (updated Oct 29, 2026) says stays are up to <b>90 days</b>, no more than <b>180 days per year</b>, the visa is valid for up to <b>5 years</b> with multiple entries, and the fee is <b>US$ 80.90</b>. Extensions, once you are in Brazil, are at the discretion of immigration authorities. A 90-day visitor stay is a poor match for a standard 12-month unfurnished lease; furnished monthly rentals are the usual bridge. Confirm current rules on the official sites before you travel — they can change."
+            },
+            {
+              "title": "Longer stays — VITEM XIV / digital nomad",
+              "html": "For a stay meant as residence, look at a temporary visa. The Ministry of Justice page reproduces Resolução Normativa CNIG nº 45/2021: a “nômade digital” works remotely for a <b>foreign</b> employer, must show at least <b>US$ 1,500/month</b> or <b>US$ 18,000</b> available, and the initial residence period is <b>up to one year</b>, renewable for an equal period. The Brazilian Consulate in Boston (updated Nov 19, 2024) lists the same income tests, plus a retirement/pensioner path at <b>US$ 2,000/month</b>, and says the digital-nomad fee for US citizens has been <b>US$ 290</b> since Aug 15, 2023. You may also need to deal with Federal Police registration and a CRNM once in Brazil — check the latest consular instructions. This is not legal advice."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "BCB PTAX — last dollar rate (Nov 24, 2026)",
+          "url": "https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do"
+        },
+        {
+          "label": "BCB Olinda API — PTAX Nov 23–24, 2026",
+          "url": "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='11-20-2026'&@dataFinalCotacao='11-25-2026'&$format=json"
+        },
+        {
+          "label": "QuintoAndar — 2BR apartments in Batel (averages as of Nov 25, 2026)",
+          "url": "https://www.quintoandar.com.br/alugar/imovel/batel-curitiba-pr-brasil/apartamento/2-quartos"
+        },
+        {
+          "label": "QuintoAndar — 2BR apartments in Bigorrilho",
+          "url": "https://www.quintoandar.com.br/alugar/imovel/bigorrilho-curitiba-pr-brasil/apartamento/2-quartos"
+        },
+        {
+          "label": "Gazeta do Paraná — Secovi-PR average rent Sept 2026 (Nov 14, 2026)",
+          "url": "https://gazetadoparana.com.br/publico/aluguel-em-curitiba-sobe-136-em-um-ano-e-pressiona-orcamento-das-familias"
+        },
+        {
+          "label": "Luvi blog — neighborhood rent ranges (April 24, 2026)",
+          "url": "https://stayluvi.com/blog/onde-morar-de-aluguel-em-curitiba-bairros-e-perfil"
+        },
+        {
+          "label": "Lei nº 8.245/1991 (Lei do Inquilinato) — arts. 37–38",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245compilado.htm"
+        },
+        {
+          "label": "gov.br — apply for a CPF from abroad (updated Dec 15, 2025)",
+          "url": "https://www.gov.br/pt-br/servicos/inscrever-no-cpf-no-exterior"
+        },
+        {
+          "label": "MRE Canberra — e-Visa / VIVIS (updated Oct 29, 2026)",
+          "url": "https://www.gov.br/mre/pt-br/embaixada-camberra/english/consular-section/visas/short-term-visas-for-stays-up-to-90-days/e-visa"
+        },
+        {
+          "label": "Ministério da Justiça — nômade digital (RN 45/2021)",
+          "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portal-de-imigracao-laboral/navegacao-guiada-1/possui-autorizacao-de-residencia/o-que-deseja/qual-a-finalidade-desejada-1/trabalho-sem-contrato-de-trabalho-no-brasil/nomade-digital/nomade-digital"
+        },
+        {
+          "label": "Consulate Boston — VITEM XIV (updated Nov 19, 2024)",
+          "url": "https://www.gov.br/mre/pt-br/consulado-boston/servicos/visa/types-of-visa/vitem-xiv"
+        }
+      ]
+    },
+    {
+      "id": "unverified",
+      "icon": "⚠️",
+      "title": "What's not verified",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<b>No construction year was checked against a municipal license or habite-se.</b> Sky (2013) and Hayat (2011) come from SYM Imóveis project pages. Up Garden (delivered Nov 2025) comes from a sale ad for the same address; a 2023 advertorial had planned August 2025. Residence Versailles is estimated ~1995 from the condominium CNPJ opening date.",
+            "Listings 4, 5, 6, 7, 9, 10, 11 and 12 have no verified year. Listing 8 is a pre-2010 tower and does not meet the 2010+ rule.",
+            "Building height is unconfirmed or only inferred (elevators, amenities) for listings 5, 6, 7, 8, 10, 11 and 12. Listings 10 and 11 are marked “height unknown.”",
+            "Furnished is “not stated” for listing 12. Listing 3’s ad says fully furnished but also lists “Semi Mobiliado.”",
+            "Several advertised rents are net of a punctuality discount (listings 2 and 6 bill a higher first month). Listing 10 showed two different headline prices — confirm. Listing 1 has slightly different long-stay package prices on the same page.",
+            "No furnished 2-bedroom <b>house</b> or confirmed ≤2-story building was found in the named neighborhoods on this pass.",
+            "No verified furnished 2BR listing with a stable URL was captured in Cabral, Ahú, Juvevê, Mercês, Cristo Rei, Centro Cívico or Bacacheri. QuintoAndar search pages showed some nearby items (including a furnished 2BR in Ahú) without a durable listing URL in the extracted page.",
+            "ZAP Imóveis, Viva Real, OLX, Imovelweb and Airbnb monthly were searched; they did not yield usable individual listing pages with complete prices and years in this pass (often JavaScript-heavy or without a stable URL). Mercado-style Facebook groups were not checked.",
+            "USD amounts use the official PTAX venda of 5.8573 BRL per USD for <b>Nov 24, 2026</b>, the latest closing rate published when this was researched in the early hours of Nov 25, 2026 (America/New_York). The Nov 25 PTAX had not been published yet.",
+            "QuintoAndar “valor médio” figures mix furnished and unfurnished 2BR asking rents and can be skewed by a few expensive units (notably Mercês and one of the Batel averages).",
+            "Neighborhood safety comments use a citywide count of police reports, not crime rates. Absence from the top 10 is not a safety rating."
+          ]
+        }
+      ]
+    }
+  ]
+}

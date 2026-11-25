@@ -14,6 +14,12 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const fmtCOP = (n) => "COP " + Math.round(n).toLocaleString("en-US");
   const fmtUSD = (n) => "$" + Math.round(n).toLocaleString("en-US");
+  const fxRate = (d) => (d.fx && (d.fx.perUsd || d.fx.copPerUsd)) || 1;
+  const fxCode = (d) => (d.fx && d.fx.currency) || "COP";
+  const fmtLocal = (n, d) => {
+    if (fxCode(d) === "BRL") return "R$ " + Math.round(n).toLocaleString("pt-BR");
+    return fmtCOP(n);
+  };
   const yearNum = (y) => { const m = String(y || "").match(/(19|20)\d{2}/); return m ? +m[0] : null; };
 
   const TYPE = {
@@ -108,7 +114,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
   /* ---------- city page ---------- */
   function renderCity(d) {
     document.title = `Relocation Research · ${d.name}, ${d.country}`;
-    const fx = d.fx.copPerUsd;
+    const fx = fxRate(d);
     const prices = d.listings.map((l) => l.price).filter((p) => p != null);
     const maxPrice = Math.ceil(Math.max(...prices) / 100000) * 100000;
     const furnishedCount = d.listings.filter((l) => l.furnished === "yes").length;
@@ -143,7 +149,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
       <section class="block" id="listings" aria-labelledby="h-listings">
         <div class="section-head">
           <h2 id="h-listings"><span class="emoji" aria-hidden="true">🏠</span>Rental listings</h2>
-          <span class="muted small">COP / month · USD at ${fx.toLocaleString("en-US")} COP/USD</span>
+          <span class="muted small">${esc(fxCode(d))} / month · USD at ${fx.toLocaleString("en-US")} ${esc(fxCode(d))}/USD</span>
         </div>
         <form class="card filters" id="filters" onsubmit="return false">
           <div class="field search">
@@ -153,7 +159,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
           <div class="field price">
             <label for="f-max">Max price (rent)</label>
             <div class="range-row">
-              <input type="range" id="f-max" min="1500000" max="${maxPrice}" step="100000" value="${maxPrice}">
+              <input type="range" id="f-max" min="${(d.priceFilter && d.priceFilter.min) || 1500000}" max="${maxPrice}" step="${(d.priceFilter && d.priceFilter.step) || 100000}" value="${maxPrice}">
               <span class="range-val" id="f-max-val"></span>
             </div>
           </div>
@@ -182,7 +188,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
             <select id="f-sort">
               <option value="price-asc">Price: low → high</option>
               <option value="price-desc">Price: high → low</option>
-              <option value="total-asc">Rent + admin: low → high</option>
+              <option value="total-asc">${esc((d.labels && d.labels.totalSort) || "Rent + admin: low → high")}</option>
               <option value="id">Listing #</option>
             </select>
           </div>
@@ -201,7 +207,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
         <div class="grid" id="grid"></div>
       </section>
 
-      <section class="block" aria-labelledby="h-towers">
+      ${d.knownTowers && d.knownTowers.length ? `<section class="block" aria-labelledby="h-towers">
         <div class="section-head"><h2 id="h-towers"><span class="emoji" aria-hidden="true">🏢</span>Known tower years — no furnished listing found</h2>${d.knownTowers_unsourced ? GEN : ""}</div>
         <div class="card table-wrap">
           <table>
@@ -209,7 +215,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
             <tbody>${d.knownTowers.map((t) => `<tr><td><b>${esc(t.name)}</b></td><td>${esc(t.area)}</td><td>${esc(t.year)}</td><td class="muted">${esc(t.note)}</td></tr>`).join("")}</tbody>
           </table>
         </div>
-      </section>
+      </section>` : ""}
 
       ${d.sections.map((s) => renderSection(s, d)).join("")}
     `;
@@ -238,7 +244,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
         case "ranges":
           return `<div class="card table-wrap" style="margin-top:16px"><h3 style="margin-bottom:6px">Typical 2BR rent ranges</h3>${b.unsourced ? GEN : ""}<table>
             <thead><tr><th>Area</th><th>Rent / month</th><th></th><th>≈ USD</th></tr></thead>
-            <tbody>${d.rentRanges.map((r) => `<tr><td><b>${esc(r.area)}</b></td><td>${esc(r.range)}</td><td class="muted">${esc(r.extra)}</td><td>${usdRange(r.range, d.fx.copPerUsd)}</td></tr>`).join("")}</tbody></table></div>`;
+            <tbody>${d.rentRanges.map((r) => `<tr><td><b>${esc(r.area)}</b></td><td>${esc(r.range)}</td><td class="muted">${esc(r.extra)}</td><td>${r.usd || usdRange(r.range, fxRate(d))}</td></tr>`).join("")}</tbody></table></div>`;
         default: return "";
       }
     }).join("");
@@ -255,15 +261,18 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
 
   /* ---------- listings ---------- */
   function listingCard(l, d) {
-    const fx = d.fx.copPerUsd;
+    const fx = fxRate(d);
     const area = d.areas.find((a) => a.id === l.area);
     const fit = criteriaFit(l);
     const t = TYPE[l.type], f = FURN[l.furnished], y = YEAR[l.yearStatus];
     const priceHtml = l.price != null
-      ? `<span class="cop">${l.priceApprox ? "~" : ""}${fmtCOP(l.price)}</span><span class="usd">≈ ${fmtUSD(l.price / fx)}/mo</span>`
+      ? `<span class="cop">${l.priceApprox ? "~" : ""}${fmtLocal(l.price, d)}</span><span class="usd">≈ ${fmtUSD(l.price / fx)}/mo</span>`
       : `<span class="na">Price not shown</span>`;
+    const adminLabel = (d.labels && d.labels.admin) || "Admin fee";
+    const totalLabel = (d.labels && d.labels.total) || "Rent + admin";
     const adminStr = l.admin.amount ? `${l.admin.label} <span class="muted">(≈ ${fmtUSD(l.admin.amount / fx)})</span>` : esc(l.admin.label);
-    const total = l.price != null && l.admin.amount ? `<div class="wide"><dt>Rent + admin</dt><dd>${fmtCOP(l.price + l.admin.amount)} <span class="muted">(≈ ${fmtUSD((l.price + l.admin.amount) / fx)})</span></dd></div>` : "";
+    const total = l.price != null && l.admin.amount ? `<div class="wide"><dt>${esc(totalLabel)}</dt><dd>${fmtLocal(l.price + l.admin.amount, d)} <span class="muted">(≈ ${fmtUSD((l.price + l.admin.amount) / fx)})</span></dd></div>` : "";
+    const iptu = l.iptu ? `<div><dt>IPTU</dt><dd>${esc(l.iptu.label)}${l.iptu.amount ? ` <span class="muted">(≈ ${fmtUSD(l.iptu.amount / fx)})</span>` : ""}</dd></div>` : "";
     const beds = l.bedrooms != null ? `${l.bedrooms} BR${l.bedroomsUncertain ? " (unverified)" : ""}` : "BR n/a";
     const baths = l.bathrooms != null ? ` / ${l.bathrooms} BA` : "";
     const yearTxt = l.yearBuilt ? esc(l.yearBuilt) : (l.yearStatus === "na" ? "—" : "Unknown");
@@ -288,8 +297,9 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
       <dl class="specs">
         <div><dt>Bedrooms / baths</dt><dd>${beds}${baths}</dd></div>
         <div><dt>Size</dt><dd>${l.sizeM2 ? l.sizeM2 + " m²" : "Not stated"}</dd></div>
-        <div><dt>Admin fee</dt><dd>${adminStr}</dd></div>
+        <div><dt>${esc(adminLabel)}</dt><dd>${adminStr}</dd></div>
         <div><dt>Year built</dt><dd>${yearTxt}</dd></div>
+        ${iptu}
         ${total}
         <div class="wide"><dt>Floors / type</dt><dd>${esc(l.typeLabel)}</dd></div>
         ${l.yearNote ? `<div class="wide"><dt>Year verification</dt><dd class="muted">${esc(l.yearNote)}</dd></div>` : ""}
@@ -304,7 +314,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
     const ids = ["q", "max", "area", "type", "furn", "year", "beds", "sort", "noprice", "fit"];
     const el = Object.fromEntries(ids.map((k) => [k, $("#f-" + k)]));
     const grid = $("#grid"), count = $("#count"), maxVal = $("#f-max-val");
-    const fx = d.fx.copPerUsd;
+    const fx = fxRate(d);
     const searchText = (l) => [l.title, l.notes, l.typeLabel, l.address, (l.features || []).join(" "), (l.flags || []).join(" "),
       (d.areas.find((a) => a.id === l.area) || {}).label].join(" ").toLowerCase()
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -312,7 +322,7 @@ const GEN = `<span class="badge warn gen-info">General info (unsourced)</span>`;
     function apply() {
       const q = el.q.value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const max = +el.max.value;
-      maxVal.textContent = `${fmtCOP(max)} · ${fmtUSD(max / fx)}`;
+      maxVal.textContent = `${fmtLocal(max, d)} · ${fmtUSD(max / fx)}`;
       let rows = d.listings.filter((l) => {
         if (el.area.value && l.area !== el.area.value) return false;
         if (el.type.value && l.type !== el.type.value) return false;
